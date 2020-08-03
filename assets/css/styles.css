@@ -719,6 +719,10 @@ footer {
   .people-page__card .people_item_info {
     order: 2;
   }
+
+  .people-page__card .people_item_info p {
+    font-size: 14px;
+  }
   .people-page__card .people_item_social {
     order: 1;
     margin-top: 0;
@@ -728,7 +732,9 @@ footer {
     margin-bottom: 20px;
   }
 
-  .
+  .basic_paragraph {
+    font-size: 0.8rem;
+  }
 }
 
 /* Экстрамалые девайсы («телефоны», < 576px) */
@@ -746,6 +752,10 @@ footer {
 @media screen and (max-width: 560px) {
   .main-features__item {
     margin-bottom: 50px;
+  }
+
+  .people-page__title {
+    padding: 0 15px;
   }
 }
 
