@@ -524,6 +524,13 @@ footer {
   color: #275286;
 }
 
+/* Privacy page */
+
+.privacy-page__content {
+  max-width: 560px;
+  margin: 60px auto;
+}
+
 /* Большие девайсы (большие десктопы, < 1200px) */
 
 @media (max-width: 1199.98px) {
@@ -555,6 +562,14 @@ footer {
 
   .main-features__item:last-child {
     margin-bottom: 0;
+  }
+
+  .privacy-page__title .basic_h_lines:before,
+  .privacy-page__title .basic_h_lines:after {
+    display: none;
+  }
+  .privacy-page__title {
+    text-align: center;
   }
 }
 
@@ -734,6 +749,10 @@ footer {
 
   .basic_paragraph {
     font-size: 0.8rem;
+  }
+
+  .privacy-page__content {
+    margin: 30px auto;
   }
 }
 
