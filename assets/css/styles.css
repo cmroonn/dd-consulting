@@ -409,6 +409,14 @@ button:focus {
   padding-left: 50px;
 }
 
+.cases-page__image-decor {
+  background-image: url(../img/circles-2.svg);
+  background-position: top right;
+  background-size: contain;
+  padding-left: 120px;
+  padding-top: 30px;
+}
+
 .people-page__image-decor img {
   border-radius: 50%;
   width: 422px;
@@ -425,6 +433,34 @@ button:focus {
 
 .people-page__card {
   margin-bottom: 7.222rem;
+}
+
+/* Cases page */
+
+.cases-page__title {
+  font-size: 72px;
+  line-height: 60px;
+}
+
+.cases-page__points {
+  margin-top: 80px;
+}
+.cases-page__point img {
+  margin-right: 35px;
+}
+.cases-page__point__content h3 {
+  font-weight: 400;
+  font-size: 40px;
+  line-height: 100%;
+  margin-bottom: 20px;
+}
+.cases-page__point__content h3 span {
+  color: #275286;
+  font-weight: 700;
+}
+
+.cases-page__point {
+  margin-bottom: 25px;
 }
 /* START footer */
 
@@ -754,6 +790,24 @@ footer {
   .privacy-page__content {
     margin: 30px auto;
   }
+
+  .cases-page__point {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .cases-page__point img {
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  .cases-page__point__content h3 {
+    font-size: 18px;
+  }
+  .cases-page__point__content p {
+    font-size: 14px;
+  }
 }
 
 /* Экстрамалые девайсы («телефоны», < 576px) */
@@ -776,6 +830,135 @@ footer {
   .people-page__title {
     padding: 0 15px;
   }
+}
+
+/* Contacts page */
+.contacts-page__communicate {
+  margin-top: 65px;
+  margin-bottom: 60px;
+}
+.contacts-page__communicate__item {
+  margin-right: 50px;
+  display: flex;
+}
+@media screen and (max-width: 767.98px) {
+  .contacts-page__communicate__item {
+    margin-bottom: 25px;
+    margin-right: 0;
+  }
+}
+
+.contacts-page__communicate__item:last-child {
+  margin-right: 0px;
+}
+
+.contacts-page__communicate__item span {
+  color: #275286;
+  font-size: 16px;
+}
+@media screen and (max-width: 350px) {
+  .contacts-page__communicate__item span {
+    font-size: 15px;
+  }
+}
+
+.contacts-page__communicate__item img {
+  margin-right: 10px;
+  display: flex;
+  align-self: flex-start;
+}
+
+.contacts-page__form {
+  background: #ffffff;
+  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+  max-width: 760px;
+  width: 100%;
+  padding: 80px 100px;
+  margin: 0 auto -70px;
+  z-index: 1;
+  position: relative;
+}
+@media screen and (max-width: 767.98px) {
+  .contacts-page__form {
+    padding: 20px;
+    box-shadow: none;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+}
+
+.contacts-page__form .service_item_number {
+  left: 50px;
+  top: 120px;
+  font-size: 400px;
+}
+@media screen and (max-width: 767.98px) {
+  .contacts-page__form .service_item_number {
+    left: -30px;
+  }
+}
+
+.contacts-page__form__left-content__privacy {
+  font-size: 12px;
+  color: #ababab;
+  max-width: 135px;
+  margin-top: 55px;
+}
+
+.contacts-page__form__heading {
+  max-width: 200px;
+  color: #202020;
+  width: 100%;
+}
+
+@media screen and (max-width: 767.98px) {
+  .contacts-page__form__left-content__privacy {
+    margin-top: 30px;
+  }
+  .contacts-page__form__heading {
+    padding-top: 30px;
+  }
+}
+
+.contacts-page__form__left-content__privacy a {
+  color: #275286;
+}
+
+.contacts-page__form__left-content,
+.contacts-page__form__right-content {
+  flex: 1;
+  z-index: 1;
+}
+
+.contacts-page__form__right-content form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.contacts-page__form__right-content input {
+  border: 1px solid #f0f0f0;
+  width: 260px;
+  height: 50px;
+  padding: 0 15px;
+  font-size: 12px;
+  margin-bottom: 14px;
+  outline: none;
+}
+
+.contacts-page__form__right-content button {
+  background: #275286;
+  width: 160px;
+  height: 50px;
+  font-size: 16px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 500px) {
