@@ -536,7 +536,7 @@ footer {
   margin-bottom: 12px;
 }
 
-.news_item_wrap {
+.news_item {
   margin-bottom: 30px;
 }
 
@@ -565,6 +565,51 @@ footer {
 .privacy-page__content {
   max-width: 560px;
   margin: 60px auto;
+}
+
+/* news page */
+
+.news-page__tabs {
+  border-bottom: 1px solid #dadada;
+  margin-top: 45px;
+  padding: 0;
+}
+.news-page__tabs li {
+  display: block;
+  margin-right: 150px;
+  font-weight: 700;
+  color: #acacac;
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+}
+
+@media screen and (max-width: 580px) {
+  .news-page__tabs li {
+    margin-right: 50px;
+  }
+}
+
+.news-page__tabs li:hover {
+  opacity: 0.8;
+}
+
+.news-page__tabs li.active {
+  padding-bottom: 15px;
+  color: #275286;
+}
+.news-page__tabs li.active:after {
+  content: "";
+  background: #275286;
+  position: absolute;
+  bottom: -1px;
+  width: 100%;
+  height: 3px;
+  left: 0;
+}
+
+.news-page__tabs li:last-child {
+  margin-right: 0px;
 }
 
 /* Большие девайсы (большие десктопы, < 1200px) */

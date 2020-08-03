@@ -29,4 +29,18 @@ $(document).ready(function () {
     $("header nav").toggleClass("d-flex");
     $(".header_burger_open, .header_burger_close").toggleClass("d-none");
   });
+
+  $(".news-page__tabs li").click(function () {
+    $(".news-page__tabs li").removeClass("active");
+    $(this).addClass("active");
+    $(".news-block").addClass("d-none");
+    var tabAttr = $(this).attr("data-news");
+
+    $(".news-block").each(function (i, el) {
+      $(el).addClass("d-none");
+      if (tabAttr === $(el).attr("data-news")) {
+        $(el).removeClass("d-none");
+      }
+    });
+  });
 });
