@@ -142,6 +142,13 @@ button:focus {
   border-bottom: 1px solid #275286;
 }
 
+.basic_paragraph {
+  color: #424242;
+  font-size: 1rem;
+}
+.basic_paragraph span {
+  font-weight: 700;
+}
 .bg_city_light {
   background: url(../img/bg_city_light.jpg);
   background-size: cover;
@@ -389,7 +396,36 @@ button:focus {
     color: rgb(36 38 40);
   }
 }
+/* People page */
 
+.people-page__title {
+  padding-top: 60px;
+  margin-bottom: 20px;
+}
+.people-page__image-decor {
+  width: 760px;
+  height: 577px;
+  background: url(../img/circles.svg) no-repeat;
+  padding-left: 50px;
+}
+
+.people-page__image-decor img {
+  border-radius: 50%;
+  width: 422px;
+  height: 422px;
+}
+
+.people-page__card .people_item_name {
+  margin-bottom: 10px;
+}
+
+.people-page__card .people_item_description {
+  margin-bottom: 30px;
+}
+
+.people-page__card {
+  margin-bottom: 7.222rem;
+}
 /* START footer */
 
 footer {
@@ -660,6 +696,39 @@ footer {
     background-position: top center;
     background-size: unset;
   }
+
+  .people-page__image-decor {
+    display: none;
+  }
+
+  .people-page__card .people_item_avatar {
+    margin: auto;
+  }
+  .people-page__cards {
+    margin-top: 70px;
+  }
+  .people-page__card {
+    text-align: center;
+    margin-bottom: 3.2rem;
+  }
+
+  .people-page__card .people_item_name {
+    font-size: 36px;
+  }
+
+  .people-page__card .people_item_info {
+    order: 2;
+  }
+  .people-page__card .people_item_social {
+    order: 1;
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+  .people-page__card .people_item_description {
+    margin-bottom: 20px;
+  }
+
+  .
 }
 
 /* Экстрамалые девайсы («телефоны», < 576px) */
