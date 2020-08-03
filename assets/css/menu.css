@@ -1,0 +1,252 @@
+header {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  color: #fff;
+  background-size: cover;
+  background-position: center center;
+  width: 100%;
+  z-index: auto;
+}
+
+.header_menu {
+  position: relative;
+}
+
+.header_menu nav {
+  width: 100%;
+}
+
+.header_menu_item {
+  padding-left: 1.4rem;
+  padding-right: 1.4rem;
+  font-size: 1rem;
+  line-height: 28px;
+  cursor: pointer;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.header_menu_item:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.header_menu_item_underline {
+  border-bottom: 1px dashed #ffffff;
+  /* Сделать шире подчёркивания */
+}
+
+.header_menu_item_phone {
+  font-weight: bold;
+  font-size: 16px;
+  font-family: "Cinzel", serif;
+}
+
+.header_burger img {
+  height: 24px;
+  position: absolute;
+  right: 0;
+  top: 5px;
+  right: 15px;
+  z-index: 1;
+}
+
+.header_logo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.header_logo img {
+  height: 36px;
+}
+
+/* Большие девайсы (большие десктопы, < 1200px) */
+
+@media (max-width: 1199.98px) {
+  .header_menu_item {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+/* Средние девайсы («таблетки», < 992px)  */
+
+@media (max-width: 991.98px) {
+  .header_menu nav {
+    padding-top: 3rem;
+  }
+
+  .header_logo {
+    left: 50%;
+    top: 20%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* Малые девайсы («ландшафтные», < 768px) */
+
+@media (max-width: 767.98px) {
+  .mobile_menu_open.header_second {
+    background: white;
+  }
+
+  .mobile_menu_open {
+    background: white;
+    position: fixed !important;
+    height: 100%;
+    top: 0px !important;
+    z-index: 999;
+  }
+
+  .mobile_menu_open::before {
+    content: " ";
+    width: 100%;
+    height: 5rem;
+    background: black;
+    top: 0px;
+    position: absolute;
+    z-index: 1;
+    text-align: center;
+    background: url(../img/header_background.jpg);
+    background-size: cover;
+  }
+
+  .mobile_menu_open .header_logo {
+    display: block !important;
+    position: absolute;
+    z-index: 9;
+    top: 0rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%) !important;
+    transform: translateX(-50%) !important;
+  }
+
+  .mobile_menu_open .header_burger img {
+    z-index: 10;
+  }
+
+  .mobile_menu_open .header_menu {
+    padding-top: 5rem !important;
+  }
+
+  .mobile_menu_open .header_menu_item {
+    color: #275286;
+    font-weight: bold;
+    line-height: 36px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .mobile_menu_open .header_menu_item_phone {
+    margin-top: 3rem;
+    position: relative;
+  }
+
+  .mobile_menu_open .header_menu_item_phone::before {
+    content: " ";
+    height: 23px;
+    width: 23px;
+    background: black;
+    position: absolute;
+    top: -1.5rem;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background: url(../img/mobile_menu_open_phone.svg);
+    background-size: cover;
+  }
+}
+
+/* Экстрамалые девайсы («телефоны», < 576px) */
+
+/* 
+/////////////////////////////////////////
+START FULLSCREEN HEADER
+/////////////////////////////////////////
+*/
+
+.header_fullscreen {
+  position: absolute;
+  top: 0;
+}
+
+.header_fullscreen .header_logo {
+  display: none;
+}
+
+/* Средние девайсы («таблетки», < 992px)  */
+
+@media (max-width: 991.98px) {
+  .header_fullscreen .header_menu nav {
+    padding-top: 0rem;
+  }
+}
+
+/* Малые девайсы («ландшафтные», < 768px) */
+
+@media (max-width: 767.98px) {
+  .header_fullscreen .header_logo {
+    display: none;
+  }
+}
+
+/* col-lg-10 */
+@media (min-width: 992px) {
+  .header_fullscreen .header_menu {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 83.333333%;
+    flex: 0 0 83.333333%;
+    max-width: 83.333333%;
+  }
+}
+
+/* col-xl-8 */
+@media (min-width: 1200px) {
+  .header_fullscreen .header_menu {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 0 66.666667%;
+    flex: 0 0 66.666667%;
+    max-width: 66.666667%;
+  }
+}
+
+/* 
+/////////////////////////////////////////
+END FULLSCREEN HEADER
+/////////////////////////////////////////
+*/
+
+/* 
+/////////////////////////////////////////
+START SECOND HEADER
+/////////////////////////////////////////
+*/
+
+.header_second {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  background: url(../img/header_background.jpg);
+  background-size: cover;
+}
+
+.header_second .push {
+  margin-right: auto;
+}
+
+/* Средние девайсы («таблетки», < 992px)  */
+
+@media (max-width: 991.98px) {
+  .header_second .push {
+    margin-right: inherit;
+  }
+}
+
+/* 
+/////////////////////////////////////////
+END SECOND HEADER
+/////////////////////////////////////////
+*/
