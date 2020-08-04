@@ -306,9 +306,16 @@ button:focus {
   overflow: hidden;
   position: relative;
   height: 100%;
-  min-height: 300px;
+  min-height: 265px;
   transition: 0.2s ease-out;
   background: white;
+}
+
+@media screen and (max-width: 767.98px) {
+  .service_item {
+    height: 100%;
+    min-height: 300px;
+  }
 }
 
 .service_item:hover {
@@ -330,6 +337,7 @@ button:focus {
   -webkit-user-select: none;
   -ms-user-select: none;
   user-select: none;
+  top: 28px;
 }
 
 .service_item_name {
@@ -337,9 +345,12 @@ button:focus {
   color: #202020;
   margin-bottom: 12px;
   margin-top: 12px;
+  padding-top: 60px;
 }
 
 .service_item_icon {
+  position: absolute;
+  top: 28px;
 }
 
 .service_item_icon_img {
@@ -480,6 +491,10 @@ footer {
   color: #ffffff;
 }
 
+.footer_contacts {
+  padding-top: 10px;
+}
+
 .footer_contacts_item {
   margin-bottom: 35px;
 }
@@ -542,7 +557,11 @@ footer {
 }
 
 .main_news {
-  margin-bottom: 4.444rem;
+  margin-bottom: 1.1rem;
+}
+
+.main_news_title {
+  margin-bottom: 2.778rem;
 }
 
 .main_news_readmore {
@@ -663,6 +682,10 @@ footer {
     max-width: 320px;
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .main_people {
+    margin-bottom: 2.4rem;
   }
 
   .h1 {
