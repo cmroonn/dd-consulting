@@ -8,6 +8,7 @@ body {
 
 body.disabled {
   overflow: hidden;
+  padding-top: 110px;
 }
 
 section {
@@ -305,7 +306,7 @@ button:focus {
   overflow: hidden;
   position: relative;
   height: 100%;
-  min-height: 270px;
+  min-height: 300px;
   transition: 0.2s ease-out;
   background: white;
 }

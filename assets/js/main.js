@@ -1,6 +1,6 @@
 $(document).ready(function () {
   $(".service_items_slider").slick({
-    adaptiveHeight: true,
+    adaptiveHeight: false,
     dots: true,
     centerMode: true,
     centerPadding: "0px",

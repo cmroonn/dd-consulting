@@ -97,6 +97,7 @@ header {
   }
   .mobile_menu_open.header_second {
     background: white;
+    transition: 0.2s;
   }
 
   .mobile_menu_open {
@@ -238,6 +239,7 @@ START SECOND HEADER
   background-size: cover;
   margin-bottom: 25px;
   min-height: 5rem;
+  transition: 0.2s;
 }
 
 .header_second .push {
