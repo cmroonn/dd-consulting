@@ -275,6 +275,10 @@ button:focus {
   margin-right: 26px;
 }
 
+.people_item_social_item img {
+  width: 12px;
+}
+
 .people_item_social_item:last-child {
   margin-right: 0;
 }
